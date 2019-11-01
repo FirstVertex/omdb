@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let rating of ratingsVms">
+    <strong>{{rating.Source}}</strong>
+    <span class="bar">
+      <span class="filler" [style.width]="rating.animValue | bar"></span>
+    </span>
+    {{rating.Value}}
+  </li>
+</ul>

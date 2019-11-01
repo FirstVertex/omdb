@@ -1,0 +1,20 @@
+strong {
+  width: 190px;
+  display: inline-block;
+}
+.bar {
+  border: 1px solid #595;
+  background: #dfd;
+  height: 1em;
+  width: 250px;
+  display: inline-block;
+  .filler {
+    width: 0;
+    transition: width 2s;
+    height: 100%;
+    display: inline-block;
+
+    background: repeating-linear-gradient(
+      90deg, #1e1, #1e1 24px, #595 24px, #595 25px);
+  }
+}
